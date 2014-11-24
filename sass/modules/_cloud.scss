@@ -1,0 +1,100 @@
+// --- CLOUD ------------------------------------------------------------------
+
+.cloud {
+	position: absolute;
+
+	&--big {
+		background: url(images/clouds/cloud-big.png) no-repeat;
+		width: 210px;
+		height: 65px;
+		top: 360px;	
+		@include animation(ltr 90s infinite linear);
+	}
+
+	&--medium,
+	&--medium-secondary {
+		background: url(images/clouds/cloud-medium.png) no-repeat;
+		width: 125px;
+		height: 30px;
+	}
+
+	&--medium {
+		top: 200px;
+		left: 330px;
+		@include animation(ltr 100s infinite linear -20s);
+	}
+
+	&--medium-secondary {
+		right: 190px;
+		top: 300px;
+		@include animation(rtl 120s infinite linear);
+	}
+
+	&--small,
+	&--small-secondary {
+		background: url(images/clouds/cloud-small.png) no-repeat;
+		width: 85px;
+		height: 25px;
+	}
+
+	&--small {
+		top: 100px;
+		left: 100px;
+		@include animation(ltr 140s infinite linear -5s);
+	}
+
+	&--small-secondary {
+		top: 60px;
+		right: 40px;
+		@include animation(rtl 100s infinite linear -5s);
+	}
+
+	&--mini {
+		background: url(images/clouds/cloud-mini.png) no-repeat;
+		width: 75px;
+		height: 25px;
+		top: 160px;
+		right: 230px;
+		@include animation(rtl 80s infinite linear -20s);
+	}
+}
+
+@-webkit-keyframes ltr {
+	0% { left: -250px; }
+	100% { left: 100%; }
+}
+
+@-moz-keyframes ltr {
+	0% { left: -250px; }
+	100% { left: 100%; }
+}
+
+@-o-keyframes ltr {
+	0% { left: -250px; }
+	100% { left: 100%; }
+}
+
+@keyframes ltr {
+	0% { left: -250px; }
+	100% { left: 100%; }
+}
+
+@-webkit-keyframes rtl {
+	0% { right: -250px; }
+	100% { right: 100%; }
+}
+
+@-moz-keyframes rtl {
+	0% { right: -250px; }
+	100% { right: 100%; }
+}
+
+@-o-keyframes rtl {
+	0% { right: -250px; }
+	100% { right: 100%; }
+}
+
+@keyframes rtl {
+	0% { right: -250px; }
+	100% { right: 100%; }
+}

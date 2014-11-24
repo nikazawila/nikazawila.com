@@ -1,0 +1,22 @@
+// --- HEADER -----------------------------------------------------------------
+
+.header {
+	text-align: center;
+	color: #A9A9A9;
+	position: relative;
+	margin: 40px 0 0;
+	z-index: 10;
+
+	&__title {
+		font-size: 60px;
+	}
+
+	&__subtitles {
+		font-size: 36px;
+	}
+
+	&__divider {
+		background: url(images/hr.png) no-repeat center;
+		height: 60px;
+	}
+}
