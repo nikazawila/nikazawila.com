@@ -48,6 +48,14 @@ body {
   overflow: hidden; }
 
 /* --- MODULES --- */
+.cloud-holder {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
 .cloud {
   position: absolute; }
   .cloud--big {
