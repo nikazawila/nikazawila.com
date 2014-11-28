@@ -37,3 +37,12 @@
 	left: 5px;
 	z-index: 4;	
 }
+
+// --- LANDSCAPE: MQ ----------------------------------------------------------
+
+@media screen and (max-width:768px) {
+	.bushes,
+	.trees {
+		display: none;	
+	}	
+}

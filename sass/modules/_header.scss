@@ -11,12 +11,26 @@
 		font-size: 60px;
 	}
 
-	&__subtitles {
+	&__subtitle {
 		font-size: 36px;
 	}
 
 	&__divider {
 		background: url(images/hr.png) no-repeat center;
 		height: 60px;
+	}
+
+	@media screen and (max-width:768px) {
+		&__title {
+			font-size: 30px;
+		}	
+
+		&__subtitle {
+			font-size: 24px;
+		}	
+
+		&__divider {
+			height: 30px;
+		}
 	}
 }

@@ -162,11 +162,18 @@ body {
   z-index: 10; }
   .header__title {
     font-size: 60px; }
-  .header__subtitles {
+  .header__subtitle {
     font-size: 36px; }
   .header__divider {
     background: url(images/hr.png) no-repeat center;
     height: 60px; }
+  @media screen and (max-width: 768px) {
+    .header__title {
+      font-size: 30px; }
+    .header__subtitle {
+      font-size: 24px; }
+    .header__divider {
+      height: 30px; } }
 
 .mountain {
   background: url(images/bg-mountain.png) no-repeat center;
@@ -202,6 +209,10 @@ body {
   left: 5px;
   z-index: 4; }
 
+@media screen and (max-width: 768px) {
+  .bushes,
+  .trees {
+    display: none; } }
 .links {
   padding: 0;
   margin: 0;
@@ -210,6 +221,11 @@ body {
     display: inline-block;
     padding: 20px;
     font-size: 30px; }
+    @media screen and (max-width: 768px) {
+      .links__item {
+        font-size: 18px;
+        display: block;
+        padding: 10px; } }
   .links__link {
     text-decoration: none;
     color: #A9A9A9; }
@@ -218,6 +234,7 @@ body {
 
 .nika {
   background: url(images/nika.png) no-repeat;
+  background-size: contain;
   width: 120px;
   height: 275px;
   position: absolute;
@@ -225,5 +242,10 @@ body {
   left: 50%;
   margin-left: -60px;
   z-index: 5; }
+  @media screen and (max-width: 768px) {
+    .nika {
+      width: 60px;
+      height: 137px;
+      margin-left: -30px; } }
 
 /*# sourceMappingURL=application.css.map */
