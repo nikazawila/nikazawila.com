@@ -14,12 +14,13 @@
 	width: 100%;
 	height: 65px;	
 	position: absolute;
-    bottom: 0;
-    z-index: 2;
+  bottom: 0;
+  z-index: 2;
 }
 
 .bushes {
 	background: url(images/bg-bushes.png) no-repeat;
+	background-size: contain;
 	width: 360px;
 	height: 150px;
 	position: absolute;
@@ -30,6 +31,7 @@
 
 .trees {
 	background: url(images/bg-trees.png) no-repeat;
+	background-size: contain;
 	width: 300px;
 	height: 355px;
 	position: absolute;
@@ -41,8 +43,13 @@
 // --- LANDSCAPE: MQ ----------------------------------------------------------
 
 @media screen and (max-width:768px) {
-	.bushes,
+	.bushes {
+		width: 180px;
+		height: 75px;
+	}
+
 	.trees {
-		display: none;	
+			width: 150px;
+			height: 170px;
 	}	
 }

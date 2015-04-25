@@ -169,11 +169,11 @@ body {
     height: 60px; }
   @media screen and (max-width: 768px) {
     .header__title {
-      font-size: 30px; }
+      font-size: 28px; }
     .header__subtitle {
-      font-size: 24px; }
+      font-size: 22px; }
     .header__divider {
-      height: 30px; } }
+      height: 28px; } }
 
 .mountain {
   background: url(images/bg-mountain.png) no-repeat center;
@@ -193,6 +193,7 @@ body {
 
 .bushes {
   background: url(images/bg-bushes.png) no-repeat;
+  background-size: contain;
   width: 360px;
   height: 150px;
   position: absolute;
@@ -202,6 +203,7 @@ body {
 
 .trees {
   background: url(images/bg-trees.png) no-repeat;
+  background-size: contain;
   width: 300px;
   height: 355px;
   position: absolute;
@@ -210,9 +212,13 @@ body {
   z-index: 4; }
 
 @media screen and (max-width: 768px) {
-  .bushes,
+  .bushes {
+    width: 180px;
+    height: 75px; }
+
   .trees {
-    display: none; } }
+    width: 150px;
+    height: 170px; } }
 .links {
   padding: 0;
   margin: 0;
@@ -223,7 +229,7 @@ body {
     font-size: 30px; }
     @media screen and (max-width: 768px) {
       .links__item {
-        font-size: 18px;
+        font-size: 16px;
         display: block;
         padding: 10px; } }
   .links__link {
