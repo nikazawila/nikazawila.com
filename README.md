@@ -2,4 +2,4 @@
 
 ==============
 
-My personal website
+Nika Zawila's web card

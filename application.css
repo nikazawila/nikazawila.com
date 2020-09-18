@@ -105,6 +105,12 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.card__link {
+  text-decoration: none;
+  color:#dd7ce6;
+  transition: 0.3s color;
+}
+
 .card__action {
   text-decoration: none;
   display: inline-block;
@@ -113,8 +119,12 @@ body {
   transition: 0.3s color;
 }
 
-.card__action:hover {
+.card__action:hover,
+.card__link:hover,
+.card__action:focus,
+.card__link:focus {
   color:#ae34b6;
+  outline: none;
 }
 
 .card__action:first-child {
